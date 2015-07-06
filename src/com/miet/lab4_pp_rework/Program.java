@@ -35,10 +35,30 @@ public class Program extends JFrame {
         JLabel labelvect2 = new JLabel("Vector #2");
         JLabel labelres = new JLabel("Result vector");
 
+        final Smoking temp = new Smoking();
+        final Triple temp1 = new Triple();
         JButton mulV = new JButton("multiply (vector)");
         mulV.addActionListener(new ActionListener(){
             @Override
             public void actionPerformed(ActionEvent arg0) {
+                xR.setText(String.valueOf(temp.vectorMul(Double.valueOf(x1.getText()),
+                        Double.valueOf(y1.getText()),
+                        Double.valueOf(z1.getText()),
+                        Double.valueOf(x2.getText()),
+                        Double.valueOf(y2.getText()),
+                        Double.valueOf(z2.getText())).x));
+                yR.setText(String.valueOf(temp.vectorMul(Double.valueOf(x1.getText()),
+                        Double.valueOf(y1.getText()),
+                        Double.valueOf(z1.getText()),
+                        Double.valueOf(x2.getText()),
+                        Double.valueOf(y2.getText()),
+                        Double.valueOf(z2.getText())).y));
+                zR.setText(String.valueOf(temp.vectorMul(Double.valueOf(x1.getText()),
+                        Double.valueOf(y1.getText()),
+                        Double.valueOf(z1.getText()),
+                        Double.valueOf(x2.getText()),
+                        Double.valueOf(y2.getText()),
+                        Double.valueOf(z2.getText())).z));
 
             }
         });
@@ -46,21 +66,72 @@ public class Program extends JFrame {
         plus.addActionListener(new ActionListener(){
             @Override
             public void actionPerformed(ActionEvent arg0) {
-
+                xR.setText(String.valueOf(temp.add(Double.valueOf(x1.getText()),
+                        Double.valueOf(y1.getText()),
+                        Double.valueOf(z1.getText()),
+                        Double.valueOf(x2.getText()),
+                        Double.valueOf(y2.getText()),
+                        Double.valueOf(z2.getText())).x));
+                yR.setText(String.valueOf(temp.add(Double.valueOf(x1.getText()),
+                        Double.valueOf(y1.getText()),
+                        Double.valueOf(z1.getText()),
+                        Double.valueOf(x2.getText()),
+                        Double.valueOf(y2.getText()),
+                        Double.valueOf(z2.getText())).y));
+                zR.setText(String.valueOf(temp.add(Double.valueOf(x1.getText()),
+                        Double.valueOf(y1.getText()),
+                        Double.valueOf(z1.getText()),
+                        Double.valueOf(x2.getText()),
+                        Double.valueOf(y2.getText()),
+                        Double.valueOf(z2.getText())).z));
             }
         });
         JButton minus = new JButton("minus");
         minus.addActionListener(new ActionListener(){
             @Override
             public void actionPerformed(ActionEvent arg0) {
-
+                xR.setText(String.valueOf(temp.sub(Double.valueOf(x1.getText()),
+                        Double.valueOf(y1.getText()),
+                        Double.valueOf(z1.getText()),
+                        Double.valueOf(x2.getText()),
+                        Double.valueOf(y2.getText()),
+                        Double.valueOf(z2.getText())).x));
+                yR.setText(String.valueOf(temp.sub(Double.valueOf(x1.getText()),
+                        Double.valueOf(y1.getText()),
+                        Double.valueOf(z1.getText()),
+                        Double.valueOf(x2.getText()),
+                        Double.valueOf(y2.getText()),
+                        Double.valueOf(z2.getText())).y));
+                zR.setText(String.valueOf(temp.sub(Double.valueOf(x1.getText()),
+                        Double.valueOf(y1.getText()),
+                        Double.valueOf(z1.getText()),
+                        Double.valueOf(x2.getText()),
+                        Double.valueOf(y2.getText()),
+                        Double.valueOf(z2.getText())).z));
             }
         });
         JButton mulS = new JButton("multiply (scalar)");
         mulS.addActionListener(new ActionListener(){
             @Override
             public void actionPerformed(ActionEvent arg0) {
-
+                xR.setText(String.valueOf(temp.scalarMul(Double.valueOf(x1.getText()),
+                        Double.valueOf(y1.getText()),
+                        Double.valueOf(z1.getText()),
+                        Double.valueOf(x2.getText()),
+                        Double.valueOf(y2.getText()),
+                        Double.valueOf(z2.getText())).x));
+                yR.setText(String.valueOf(temp.scalarMul(Double.valueOf(x1.getText()),
+                        Double.valueOf(y1.getText()),
+                        Double.valueOf(z1.getText()),
+                        Double.valueOf(x2.getText()),
+                        Double.valueOf(y2.getText()),
+                        Double.valueOf(z2.getText())).y));
+                zR.setText(String.valueOf(temp.scalarMul(Double.valueOf(x1.getText()),
+                        Double.valueOf(y1.getText()),
+                        Double.valueOf(z1.getText()),
+                        Double.valueOf(x2.getText()),
+                        Double.valueOf(y2.getText()),
+                        Double.valueOf(z2.getText())).z));
             }
         });
 
