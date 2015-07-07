@@ -13,6 +13,7 @@ public class Smoking {
         temp.x = x - x1;
         temp.y = y - y1;
         temp.z = z - z1;
+        //sdfkgl;dl;
         return temp;
     }
     public Triple scalarMul(double x,double y, double z, double x1, double y1, double z1){
